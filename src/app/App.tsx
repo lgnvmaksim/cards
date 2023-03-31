@@ -1,17 +1,21 @@
 import React from 'react';
+import './App.css'
 import {Navigate, Route, Routes} from "react-router-dom";
-import {Profile} from "./Components/Profile";
-import {Login} from "./Components/Login";
-import {Error404} from "./Components/Error404";
-import {NewPasswordEnter} from "./Components/NewPasswordEnter";
-import {PasswordRecovery} from "./Components/PasswordRecovery";
-import {Registration} from "./Components/Registration";
+import {Profile} from "../components/Profile";
+import {Login} from "../components/Login";
+import {Error404} from "../components/Error404";
+import {NewPasswordEnter} from "../components/NewPasswordEnter";
+import {PasswordRecovery} from "../components/PasswordRecovery";
+import {Registration} from "../components/Registration";
+import {Header} from "../components/Header";
 
 
 function App() {
     return <div>
+        <Header/>
+
         <Routes>
-            <Route path={'profile'} element={<Profile/>}/>
+            <Route path={'/'} element={<Profile/>}/>
             <Route path={'registration'} element={<Registration/>}/>
             <Route path={'login'} element={<Login/>}/>
             <Route path={'password-recovery'} element={<PasswordRecovery/>}/>
