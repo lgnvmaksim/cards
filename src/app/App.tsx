@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css'
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Profile} from "../components/Profile";
-import {Login} from "../components/Login";
+import {Login} from "../components/auth/Login";
 import {Error404} from "../components/Error404";
 import {NewPasswordEnter} from "../components/NewPasswordEnter";
 import {PasswordRecovery} from "../components/PasswordRecovery";
@@ -11,7 +11,7 @@ import {Header} from "../components/Header";
 
 
 function App() {
-    return <div>
+    return <div style={{backgroundColor: 'whitesmoke',minHeight: '100vh'}}>
         <Header/>
 
         <Routes>
